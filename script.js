@@ -248,19 +248,84 @@
 //     showMessage("Giriş Hatalı");
 // }
 
-var sayiBir=parseInt(prompt("1. sayi"));
-var sayiIki=parseInt(prompt("2. sayi"));
+// var sayiBir=parseInt(prompt("1. sayi"));
+// var sayiIki=parseInt(prompt("2. sayi"));
 
-function topla(a,b){
-    var islem=a+b;
-    return islem;
+// function topla(a,b){
+//     var islem=a+b;
+//     return islem;
 
+// }
+// var sonuc=topla(sayiBir,sayiIki);
+// console.log(sonuc);
+
+// if(sonuc>=0){
+//     console.log("sayi pozitif");
+// }else{
+//     console.log("Sayi negatif");
+// }
+
+// var sayHello=function(){
+//     console.log("Hello World!");
+// };
+// sayHello();
+
+// kısa yazımı
+// var sayHello=() => console.log("Hello World!");
+// sayHello();
+
+// Anonim Foksiyon
+// console.log("Hello World!");
+// setTimeout(function(){
+//     console.log("Welcome Eslem");
+// },2000)  
+// 2000 iki saniye sonra 
+
+// var numbers=[1,2,3,4,5,6,7,8,9,10];
+// var result=numbers.filter(
+//     function(number){
+//         if(number%2==0){
+//             return number;
+//         }
+//     }
+// );
+// console.log(numbers);
+// console.log(result);
+
+// function ortalamaHesapla(vize,final){
+//     var ortalama=(vize*0.4)+(final*0.6);
+//     console.log(ortalama);
+//     return ortalama;
+// }
+// function gectiMiKaldiMi(ortalam){
+//     if(ortalama>60){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+// function sonucFonksiyonu(a){
+// if(a==true){
+//     alert("Geçti");
+// }else{
+//     alert("Kaldi");
+// }
+// }
+// var vizeNotu=50;
+// var finalNotu=65;
+// var ortalama=ortalamaHesapla(vizeNotu,finalNotu);
+// var sonuc=gectiMiKaldiMi(ortalama);
+// sonucFonksiyonu(sonuc);
+
+var user={
+    firstName:"Eslem",
+    lastName:"Filiz",
+    email:"example@gmail.com",
+    age:24,
+    hobbies:["Yüzme","Kitap okuma","Tiyatro"],
+    "home adress":"Ankara"
+};
+for(var i in user){
+    console.log(user[i]);
 }
-var sonuc=topla(sayiBir,sayiIki);
-console.log(sonuc);
-
-if(sonuc>=0){
-    console.log("sayi pozitif");
-}else{
-    console.log("Sayi negatif");
-}
+console.log(user);
